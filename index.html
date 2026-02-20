@@ -9,37 +9,43 @@
     body {
       margin: 0;
       background: black;
-      color: white;
       height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       font-family: Arial, sans-serif;
-      text-align: center;
+      overflow: hidden;
+      position: relative;
+      color: white;
     }
 
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    /* BIG logo */
+    /* MASSIVE logo */
     .main-logo {
-      width: 1200px;      /* 4x bigger */
-      max-width: 95%;
-      margin-bottom: 40px;
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 2000px;     /* 3x bigger */
+      max-width: 150%;
+      z-index: 1;
+    }
+
+    /* Text layered over logo */
+    .overlay-content {
+      position: absolute;
+      top: 60%;   /* controls overlap position */
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      z-index: 2;
     }
 
     h1 {
       margin: 0;
-      letter-spacing: 8px;
-      font-size: 42px;
+      letter-spacing: 10px;
+      font-size: 48px;
     }
 
     .instagram-icon {
-      width: 50px;
-      margin-top: 35px;
+      width: 55px;
+      margin-top: 30px;
       filter: brightness(0) invert(1);
       transition: 0.3s ease;
     }
@@ -54,10 +60,9 @@
 
 <body>
 
-  <div class="container">
+  <img src="logo.png" alt="Reborn Logo" class="main-logo">
 
-    <img src="logo.png" alt="Reborn Logo" class="main-logo">
-
+  <div class="overlay-content">
     <h1>COMING SOON</h1>
 
     <a href="https://instagram.com/reborn_lifting_" target="_blank" rel="noopener noreferrer">
@@ -66,7 +71,6 @@
         alt="Instagram"
         class="instagram-icon">
     </a>
-
   </div>
 
 </body>
