@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <title>Reborn - Coming Soon</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
       margin: 0;
@@ -16,17 +17,47 @@
       text-align: center;
       font-family: Arial, sans-serif;
     }
-    img {
-      width: 1300px;
-      max-width: 190vw;
-      margin-bottom: 60px;
+
+    /* Main Logo */
+    .main-logo {
+      width: 400px;
+      max-width: 80%;
+      margin-bottom: 50px;
     }
-    h1 { margin: 0; letter-spacing: 4px; }
-    p { margin-top: 10px; opacity: 0.75; }
+
+    h1 {
+      margin: 0;
+      letter-spacing: 6px;
+      font-size: 40px;
+    }
+
+    /* Instagram Icon */
+    .instagram-icon {
+      width: 50px;
+      margin-top: 35px;
+      filter: invert(1);
+      transition: 0.3s ease;
+    }
+
+    .instagram-icon:hover {
+      transform: scale(1.15);
+      opacity: 0.8;
+    }
   </style>
 </head>
+
 <body>
-  <img src="logo.png" alt="Reborn Logo">
+
+  <img src="logo.png" alt="Reborn Logo" class="main-logo">
+
   <h1>COMING SOON</h1>
+
+  <a href="https://instagram.com/reborn_lifting_" target="_blank">
+    <img 
+      src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+      alt="Instagram"
+      class="instagram-icon">
+  </a>
+
 </body>
 </html>
